@@ -1,6 +1,6 @@
 > https://restfulapi.net/rest-api-design-tutorial-with-example/
 
-### Identify Object Model
+### 1.Identify Object Model
 identifying the objects which will be presented as resources  
 
 ```
@@ -8,7 +8,7 @@ device
 configuration  
 ```
 
-### Create Model URIs
+### 2.Create Model URIs
 a device is a top-level resource. And configuration is sub-resource under device  
 URIs do not use any verb or operation. **Nouns only** 
 
@@ -16,7 +16,7 @@ URIs do not use any verb or operation. **Nouns only**
 /devices/{id}/configurations/{id}
 ```
 
-### Determine Representations
+### 3.Determine Representations
 XML or JSON format  
 
 #### Collection of Device Resource
@@ -63,7 +63,7 @@ To get complete information about a resource, you need to access through its spe
 ```
 
 
-### Assign HTTP Methods
+### 4.Assign HTTP Methods
 
 #### Filter
 ```
