@@ -29,4 +29,7 @@ D:\WashU\Flask_test>venv\Scripts\activate.bat
    Use a production WSGI server instead.
  * Debug mode: off
  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+ 
+ # open the URL and submit the form.
+ # get the result in template/result.html
 ```
