@@ -19,7 +19,12 @@ Analogy: Object-Oriented Programming: API = the set of **methods / attributes** 
 
 2. How does APIs relate to Web Services?  
 Web services are a set of rules and technologiesi that enable two or more components **on the web** to talk to each other  
-Web services are **APIs in the context of web** 
+Web services are **APIs in the context of web**  
+Web services are set of techs and rules enable two or more components on the web to **talk to each other**  
+The first web service used: **WSDL(language) + SOAP(technology:XML/HTTP)**  
+**distributed programming:** end software or system is a set of interlinked components that are located in different computers and communicated with each other thru some protocol(SOAK) despite their programming language.  
+service description using WSDL (**registry queies** (the communication rules))  
+
 Not every API is a web service  
 **REST API = REST web service**  
 
