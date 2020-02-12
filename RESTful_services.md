@@ -18,13 +18,12 @@ A way to let **software components** to talk to each other
 Analogy: Object-Oriented Programming: API = the set of **methods / attributes** of the object  
 
 2. How does APIs relate to Web Services?  
-Web services are a set of rules and technologiesi that enable two or more components **on the web** to talk to each other  
+Web services are a set of rules and technologiesi that enable two or more components **on the web** to interoperate
 Web services are **APIs in the context of web**  
 Web services are set of techs and rules enable two or more components on the web to **talk to each other**  
 The first web service used: **WSDL(language) + SOAP(technology:XML/HTTP)**  
 **distributed programming:** end software or system is a set of interlinked components that are located in different computers and communicated with each other thru some protocol(SOAK) despite their programming language.  
 service description using WSDL (**registry queies** (the communication rules))  
-
 Not every API is a web service  
 **REST API = REST web service**  
 
@@ -43,7 +42,7 @@ REST is the underlying architecture of the WEB
 
 
 ### Why REST
-
+**standardization of one type of web services is important**  
   
 ### RESTful web services
 How can the client tell the service provider which operation it wants to perform? **Method info**  
@@ -53,5 +52,7 @@ How can the client tell the service provider what data to operate on? **Scoping 
 　　DELETE api/users/:userId HTTP/1.1  
   
 ### How it works  
-
-* Example in NodeJs
+HTTP  
+Scoping info goes in the **parameters part of the URI**  
+data exchange format(XML,JSON)  
+communication is stateless  
