@@ -1,6 +1,6 @@
 > https://restfulapi.net/rest-api-design-tutorial-with-example/
 
-### 1.Identify Object Model
+## 1. Identify Object Model
 identifying the objects which will be presented as resources  
 
 ```
@@ -8,7 +8,7 @@ device
 configuration  
 ```
 
-### 2.Create Model URIs
+## 2. Create Model URIs
 a device is a top-level resource. And configuration is sub-resource under device  
 URIs do not use any verb or operation. **Nouns only** 
 
@@ -16,7 +16,7 @@ URIs do not use any verb or operation. **Nouns only**
 /devices/{id}/configurations/{id}
 ```
 
-### 3.Determine Representations
+## 3. Determine Representations
 XML or JSON format  
 
 #### Collection of Device Resource
@@ -63,7 +63,7 @@ To get complete information about a resource, you need to access through its spe
 ```
 
 
-### 4.Assign HTTP Methods
+## 4. Assign HTTP Methods
 
 #### Filter
 ```
@@ -93,21 +93,21 @@ Normally, you may want to **SOFT DELETE** a resource in these requests – in ot
 By following this approach, you will not need to find and remove its references from other places as well.  
 
 #### Status Codes
-200 OK - [GET]
-201 CREATED - [POST/PUT/PATCH]
-202 Accepted - [*]
-204 NO CONTENT - [DELETE]
-400 INVALID REQUEST - [POST/PUT/PATCH]
-401 Unauthorized - [*]
-403 Forbidden - [*]
-404 NOT FOUND - [*]：record doesn't exist
-406 Not Acceptable - [GET]：format not available - JSON-XML
-410 Gone -[GET]
-422 Unprocesable entity - [POST/PUT/PATCH]
-500 INTERNAL SERVER ERROR - [*]
+200 OK - [GET]  
+201 CREATED - [POST/PUT/PATCH]  
+202 Accepted - [*]  
+204 NO CONTENT - [DELETE]  
+400 INVALID REQUEST - [POST/PUT/PATCH]  
+401 Unauthorized - [*]  
+403 Forbidden - [*]  
+404 NOT FOUND - [*]：record doesn't exist  
+406 Not Acceptable - [GET]：format not available - JSON-XML  
+410 Gone -[GET]  
+422 Unprocesable entity - [POST/PUT/PATCH]  
+500 INTERNAL SERVER ERROR - [*]  
 
 #### Hypermedia API
-link to the next step
+link to the next step  
 ```
 {"link": {
   "rel":   "collection https://www.example.com/zoos",
@@ -117,7 +117,7 @@ link to the next step
 }}
 ```
 
-(HATEOAS) - Github
+(HATEOAS) - Github  
 ```
 {
   "current_user_url": "https://api.github.com/user",
