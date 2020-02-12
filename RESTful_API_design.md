@@ -19,11 +19,11 @@ URIs do not use any verb or operation. **Nouns only**
 ### Determine Representations
 XML or JSON format  
 
-##### Collection of Device Resource
+#### Collection of Device Resource
 When returning a collection resource, include **only most important information** about resource.  
 This will keep the size of payload small, and so will **improve the performance** of REST APIs.  
 
-##### Single Device Resource
+#### Single Device Resource
 include **complete** information of a device in this URI.  
 Here, also include a list of links for **sub-resources and other supported operations**. This will make your REST API **HATEOAS** driven.  
 Collection may be in two forms **primary collection and secondary collection**.  
@@ -65,7 +65,7 @@ To get complete information about a resource, you need to access through its spe
 
 ### Assign HTTP Methods
 
-##### Filter
+#### Filter
 ```
 ?limit=10
 ?offset=10 #start from
@@ -74,25 +74,25 @@ To get complete information about a resource, you need to access through its spe
 ?animal_type_id=1 #where
 ```
 
-##### Browse all devices or configurations  
+#### Browse all devices or configurations  
 ```
 HTTP GET /configurations?startIndex=0&size=20
 ```
 
-##### Create a device or configuration
+#### Create a device or configuration
 ```
 HTTP POST /configurations
 ```
 
-##### Update a device or configuration
+#### Update a device or configuration
 
-##### Remove a device or configuration
+#### Remove a device or configuration
 A successful response SHOULD be **202 (Accepted)** if resource has been queues for deletion (async operation),  
 or **200 (OK) / 204 (No Content)** if resource has been deleted permanently (sync operation).  
 Normally, you may want to **SOFT DELETE** a resource in these requests – in other words, set their **status INACTIVE**.  
 By following this approach, you will not need to find and remove its references from other places as well.  
 
-##### Status Codes
+#### Status Codes
 200 OK - [GET]
 201 CREATED - [POST/PUT/PATCH]
 202 Accepted - [*]
@@ -106,7 +106,7 @@ By following this approach, you will not need to find and remove its references 
 422 Unprocesable entity - [POST/PUT/PATCH]
 500 INTERNAL SERVER ERROR - [*]
 
-##### Hypermedia API
+#### Hypermedia API
 link to the next step
 ```
 {"link": {
