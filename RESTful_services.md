@@ -56,3 +56,31 @@ HTTP methods: **GET** **POST**(create) **PUT**(update) **DELETE**
    Scoping info goes in the **parameters part of the URI**    
    data exchange format(XML,JSON)  
    communication is stateless  
+   
+   
+______
+
+> https://restfulapi.net/
+## Guiding Principles of REST
+### Client–server
+### Stateless
+Each request from client to server must contain **all of the information necessary** to understand the request  
+**cannot** store context on the **server**
+### Cacheable
+Cache constraints require that the data within a response to a request be implicitly or explicitly **labeled as cacheable or non-cacheable**. (client part)
+### Uniform interface
+four interface constraints: identification of resources; manipulation of resources through representations; self-descriptive messages; and, hypermedia as the engine of application state.  
+
+______
+REST uses a **resource identifier** to identify the **particular resource** involved in an interaction between components.  
+
+The **state of the resource** at any particular timestamp is known as **resource representation**. A representation consists of **data, metadata describing the data and hypermedia links** which can help the clients in transition to the next desired state.  
+
+In simplest words, in the REST architectural style, data and functionality are considered **resources** and are accessed using **Uniform Resource Identifiers** (URIs). The resources are acted upon by using a set of simple, well-defined **operations**. The clients and servers **exchange representations of resources** by using a **standardized interface and protocol – typically HTTP**.  
+
+Resources are **decoupled** from their representation so that their content **can be accessed in a variety of formats**, such as HTML, XML, plain text, PDF, JPEG, JSON, and others.  
+
+**Metadata** about the resource is available and used, for example, to **control caching, detect transmission errors, negotiate the appropriate representation format, and perform authentication or access control**. And most importantly, every interaction with a resource is **stateless**.
+
+All these principles help RESTful applications to be **simple, lightweight, and fast**.
+
