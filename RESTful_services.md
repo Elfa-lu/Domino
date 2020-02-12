@@ -25,7 +25,7 @@ The first web service used: **WSDL(language) + SOAP(technology:XML/HTTP)**
 **distributed programming:** end software or system is a set of interlinked components that are located in different computers and communicated with each other thru some protocol(SOAK) despite their programming language.  
 service description using WSDL (**registry queies** (the communication rules))  
 Not every API is a web service  
-**REST API = REST web service**  
+**REST API = REST web service** - Web service APIs that adhere to the REST architectural constraints  
 
 3. What is a REST API?  
 an API that follows the rules of REST specification  
