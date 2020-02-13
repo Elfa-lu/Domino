@@ -10,6 +10,7 @@ app = Flask(__name__)
 def index():
 #    return '<h1>Hello World</h1>'
 
+# curl -v http://127.0.0.1:5000/    -     Content Type: text/html ->  Content Type: application/json
 # it will return a http content. So if i want return a json format, then we can use jsonify package
     return jsonify({"about": "Hello World"})
 
