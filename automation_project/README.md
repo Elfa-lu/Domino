@@ -1,7 +1,6 @@
 ## 1. alert system
 This project is used to alert.  
-The script contains a crawler that crawl all the website that our company want to monitor. If the spider find our company's name on these websited, then it will send email to my colleagues. The spider run every two hours automatically on our server.
-
+The script contains a crawler that crawl all the website that our company want to monitor. If the spider find our company's name on these websited, then it will send email to my colleagues. The spider run every two hours automatically on our server, which is deployed by IT department colleagues.
 
 ## 2. parse JSON
 This project is used to automatically convert json data which is retrieved from the third party to txt file.  
