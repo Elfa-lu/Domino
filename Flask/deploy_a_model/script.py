@@ -1,21 +1,21 @@
-#importing libraries
 import os
 import numpy as np
 import flask
 import pickle
 from flask import Flask, render_template, request
 
-#creating instance of the class
+# creating instance
 app=Flask(__name__)
 
-#to tell flask what url shoud trigger the function index()
+# tell flask what url should trigger the function index()
 @app.route('/')
 @app.route('/index')
 def index():
+    # Generating HTML from within Python
     return flask.render_template('index.html')
-    #return "Hello World"
+    
 
-#prediction function
+# prediction function
 def ValuePredictor(to_predict_list):
     to_predict = np.array(to_predict_list).reshape(1,12)
     loaded_model = pickle.load(open("model.pkl","rb"))
