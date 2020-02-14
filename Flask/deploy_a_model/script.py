@@ -25,6 +25,7 @@ def ValuePredictor(to_predict_list):
 
 @app.route('/result',methods = ['POST'])
 def result():
+    # get the input data from html
     if request.method == 'POST':
         to_predict_list = request.form.to_dict()
         to_predict_list=list(to_predict_list.values())
