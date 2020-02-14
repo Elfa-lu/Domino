@@ -5,8 +5,8 @@
 ### project structure
 
 #### 1. model need to be deployed (model.pkl)
-#### 2. website that allow users to enter data (index.html
-#### 3. Flask API that receive the input and return the prediction
+#### 2. website that allow users to enter data (index.html)
+#### 3. Flask API that receive the input and return the prediction (script.py)
 
 ```
 C:\Users\elfa>d:
