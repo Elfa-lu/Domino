@@ -36,7 +36,8 @@ def result():
             prediction='Income more than 50K'
         else:
             prediction='Income less that 50K'
-            
+        
+	# return the result to result.html with its prediction
         return render_template("result.html",prediction=prediction)
 
 if __name__ == "__main__":
