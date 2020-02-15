@@ -11,6 +11,6 @@ What is rest, restful, and principles on designing restful api
 
 ## Domino
 What is Domoni, why Domino.  
-How Donimo used in a model lifecycle
+How Donimo is used in a model lifecycle
 
 ## Bonus: related automation projects (during 2019 intern)
